@@ -1,0 +1,31 @@
+
+!pip3 install qiskit
+
+First instal Qiskit (above)
+then import some useful packages from QIskit (for circuit building and access backend) as well as numpy and pyplot for some mathemtics and visualization:
+
+import qiskit
+import matplotlib.pyplot as plt
+import matplotlib.axes as axes
+%matplotlib inline
+import numpy as np
+import networkx as nx
+from math import pi
+from qiskit import Aer
+from qiskit.tools.visualization import plot_histogram
+from qiskit.circuit.library import TwoLocal
+
+from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister, execute
+from qiskit.tools.visualization import circuit_drawer
+from qiskit.quantum_info import state_fidelity
+from qiskit import BasicAer
+
+%matplotlib inline
+# Importing standard Qiskit libraries and configuring account
+from qiskit import QuantumCircuit, execute, Aer, IBMQ
+from qiskit.compiler import transpile, assemble
+from qiskit.tools.jupyter import *
+from qiskit.visualization import *
+
+
+backend = BasicAer.get_backend('unitary_simulator')
